@@ -779,7 +779,7 @@ section {
   color: var(--brand-color);
 }
 .about-us .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/about.jpeg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -1697,6 +1697,18 @@ section {
   color: #c8bab5;
   font-size: 14px;
 }
+
+/*--------------------------------------------------------------
+# Gellery
+--------------------------------------------------------------*/
+.gallery-img {
+  height: 30rem;
+  background-position: center;
+  object-fit: cover;
+}
+/* .no-scroll {
+  overflow: hidden;
+} */
 
 /*--------------------------------------------------------------
 # Footer
