@@ -817,6 +817,12 @@ section {
   overflow: hidden;
 }
 
+.team .member .member-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
 .team-linkedin {
   background-color: var(--brand-color);
   padding: 0.5rem 2rem;
