@@ -1832,49 +1832,15 @@ section {
 }
 
 /* pagination */
-.main-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3rem;
+.btn-load-more {
+  background-color: var(--brand-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  color: #fff;
+  border: none;
+  transition: all 300ms ease-in-out;
 }
-.pagination-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-  gap: 20px;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.pagination-list li a,
-.pagination-list li span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2rem;
-  width: 2rem;
-  text-decoration: none;
-  border-radius: 50px;
-  border: 1px solid var(--brand-color);
-  color: #000;
-  user-select: none;
-}
-
-.pagination-list .previous a,
-.pagination-list .next a {
-  color: #000000;
-}
-
-.pagination-list .current span {
-  color: #000;
+.btn-load-more:hover {
   background-color: var(--secondary-color);
-}
-
-.pagination-list .previous span,
-.pagination-list .next span {
-  background: #bdc2c8;
-  color: #000;
-  border: 1px solid #bdc2c8;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
