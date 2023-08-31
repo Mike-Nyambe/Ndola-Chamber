@@ -1,14 +1,16 @@
-const pages = [{ url: "gallery.html" }, { url: "gallery-1.html" }];
+window.addEventListener("DOMContentLoaded", () => {
+  // Your pagination code here
+  const pages = [{ url: "gallery.html" }, { url: "gallery-1.html" }];
 
-function getCurrentPage() {
-  const currentPageUrl = window.location.pathname;
-  return pages.find((page) => currentPageUrl.includes(page.url));
-}
+  function getCurrentPage() {
+    const currentPageUrl = window.location.pathname;
+    return pages.find((page) => currentPageUrl.includes(page.url));
+  }
 
-function paginate(pages, selector) {
-  const currentPage = getCurrentPage();
-  const currentPageIndex = pages.findIndex((page) => page === currentPage);
-  const html = `
+  function paginate(pages, selector) {
+    const currentPage = getCurrentPage();
+    const currentPageIndex = pages.findIndex((page) => page === currentPage);
+    const html = `
       <ul class="pagination-list">
           <li class="previous">
               ${
@@ -40,13 +42,14 @@ function paginate(pages, selector) {
       </ul>
   `;
 
-  document.querySelector(selector).innerHTML = html;
-}
+    document.querySelector(selector).innerHTML = html;
+  }
 
-// Function to call the paginate function on page load
-function onPageLoad() {
-  paginate(pages, ".pagination");
-}
+  // Function to call the paginate function on page load
+  function onPageLoad() {
+    paginate(pages, ".pagination");
+  }
 
-// Add an event listener for the "load" event on the window object
-window.addEventListener("load", onPageLoad);
+  // Add an event listener for the "load" event on the window object
+  window.addEventListener("load", onPageLoad);
+});
