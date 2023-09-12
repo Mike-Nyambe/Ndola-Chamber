@@ -203,6 +203,7 @@ h6 {
   text-transform: none;
   font-weight: 500;
   color: #581601;
+  text-transform: capitalize;
 }
 
 .navbar .dropdown ul a i {
