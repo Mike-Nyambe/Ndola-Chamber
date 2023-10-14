@@ -702,25 +702,20 @@ section {
 --------------------------------------------------------------*/
 
 .clients .client-logo {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
-  background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   border-radius: 8px;
   height: 100px;
   margin: 0.5rem 0;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.clients .client-logo img {
+.clients .client-logo {
   transition: all 0.3s ease-in-out;
-  height: 36px;
   filter: grayscale(100%);
 }
 
-.clients .client-logo:hover img {
+.clients .client-logo:hover {
   filter: none;
   transform: scale(1.1);
 }
