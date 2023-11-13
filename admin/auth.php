@@ -8,7 +8,7 @@ session_regenerate_id(true);
 $_self = $_SERVER['PHP_SELF'];
 
 // Set allowed pages
-$allowedPages = ['login.php','register.php'];
+$allowedPages = ['login.php'];
 
 // Error handling
 error_reporting(E_ALL);

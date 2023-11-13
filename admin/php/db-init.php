@@ -2,7 +2,7 @@
 
 <?php
 // Create database
-create_database("ndolaChamber");
+create_database("ndolachamber_db");
 
 $news_table_columns = "
 news_id INT(11) NOT NULL AUTO_INCREMENT,

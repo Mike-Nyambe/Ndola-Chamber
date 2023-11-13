@@ -3,7 +3,7 @@ function create_mysql_connection() {
     $host = "localhost";
     $username = "root";
     $password = "";
-    $database_name = "ndolaChamber";  // Specify your database name here
+    $database_name = "ndolachamber_db";  // Specify your database name here
 
     $connection = new mysqli($host, $username, $password, $database_name);
 

@@ -51,7 +51,7 @@ function create_table($table_name, $table_columns) {
 }
 
 function insert_news() {
-  $connection = connect_to_database("ndolaChamber");
+  $connection = connect_to_database("ndolachamber_db");
 
   if (isset($_POST["submit"])) {
       $news_title = $connection->real_escape_string($_POST["title"]);
@@ -105,7 +105,7 @@ function insert_news() {
 }
 
 function select_news($condition_1 = "", $condition_2 = "", $condition_3 = "") {
-  $connection = connect_to_database("ndolaChamber");
+  $connection = connect_to_database("ndolachamber_db");
   $query = "SELECT * FROM news " . $condition_1 . " " . $condition_2 . " " . $condition_3;
   $result = $connection->query($query);
 
@@ -117,7 +117,7 @@ function select_news($condition_1 = "", $condition_2 = "", $condition_3 = "") {
 }
 
 function delete_news($news_id) {
-  $connection = connect_to_database("ndolaChamber");
+  $connection = connect_to_database("ndolachamber_db");
 
   $query = "DELETE FROM news";
   $query .= " WHERE news_id = {$news_id}";
