@@ -701,21 +701,35 @@ section {
 # Clients
 --------------------------------------------------------------*/
 
-.clients .client-logo {
-  overflow: hidden;
-  border-radius: 8px;
-  height: 100px;
-  margin: 0.5rem 0;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+/* .clients .clients-wrap {
+  border-top: 1px solid #f1eeed;
+  border-left: 1px solid #f1eeed;
+} */
 
 .clients .client-logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  height: 130px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  cursor: pointer;
+}
+
+.clients .client-logo img {
   transition: all 0.3s ease-in-out;
+  height: 100px;
   filter: grayscale(100%);
 }
 
-.clients .client-logo:hover {
+.clients .client-logo:hover img {
   filter: none;
   transform: scale(1.1);
 }
